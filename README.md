@@ -1,4 +1,7 @@
-### This is a fork of Master as of 2021-06-29 15:29 EST
+### This is a 'fork' of Master as of 2021-06-29 15:29 EST
+Notes:
+- This for is not inteded to be merged as-is. 
+- See `chosen.jquery.js` for baseline and `chosen.jquery_mod.js` for my updated version.
 ### Adds 'support' for Android browsers
 This fork contains code changes that has two additions:
 1) Add an option to override the allowed browser check within chosen
