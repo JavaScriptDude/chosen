@@ -1,3 +1,29 @@
+### This is a fork of Master as of 2021-06-29 15:29 EST
+### Adds 'support' for Android browsers
+This fork contains code changes that has two additions:
+1) Add an option to override the allowed browser check within chosen
+  - This assumes that the developmer has validated the User Agent by hand
+  - eg: 
+```
+var bBrowserIsOkForChosen = _myPrivateBrowserChecker()
+if (!bBrowserIsOkForChosen) {
+  console.log("Chosen is not supported by browser: " + window.navigator.userAgent)
+} else {
+  $(elem).chosen({allow_browser_ua: bBrowserIsOk, ...})
+}
+```
+2) Open the browser_is_supported() abstract function to the public
+- Creates a global namespace `window.JQuery_Chosen`:
+
+```
+// Calls the internal AbstractChosen.browser_is_supported() which returns a boolean
+JQuery_Chosen.browser_is_supported()
+```
+    
+#
+### --------------------------- Original README.md ---------------------------
+#
+
 # Deprecated
 
 #### This version of Chosen is not currently under active development while we decide on its future direction.
