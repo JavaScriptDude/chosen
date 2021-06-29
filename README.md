@@ -2,7 +2,7 @@
 Notes:
 - This for is not inteded to be merged as-is. 
 - See `chosen.jquery.js` for baseline and `chosen.jquery_mod.js` for my updated version.
-### Adds 'support' for Android browsers
+### Re-adds 'support' for mobile browsers
 This fork contains code changes that has two additions:
 1) Add an option to override the allowed browser check within chosen
   - This assumes that the developmer has validated the User Agent by hand
